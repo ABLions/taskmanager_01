@@ -1,0 +1,14 @@
+.button_em{
+    width: 100px;
+    margin: 0 5px 0 5px;
+}
+/* Structure */
+:host ::ng-deep table {
+    width: 700px;
+}
+
+:host ::ng-deep .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+}
+  

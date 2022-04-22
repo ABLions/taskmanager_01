@@ -1,0 +1,16 @@
+  <mat-form-field appearance="fill">
+    <mat-label>name</mat-label>
+    <input matInput placeholder="name" [(ngModel)]="employee.name">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>position</mat-label>
+    <input matInput placeholder="position" [(ngModel)]="employee.position">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>{{employee.task.taskName}}</mat-label>
+    <mat-select matInput placeholder="Select a task" [(ngModel)]="employee.task">
+      <mat-option *ngFor="let tk of task" [value]="tk">{{tk.taskName}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <button mat-button color="primary">Save</button>
+  <button mat-button color="warn">Cancel</button>
